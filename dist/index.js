@@ -1,3 +1,3 @@
 "use strict";
-module.exports.transform = require('./transform');
+module.exports.convert = require('./convert').convert;
 //# sourceMappingURL=index.js.map

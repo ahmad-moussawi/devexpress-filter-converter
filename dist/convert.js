@@ -35,4 +35,4 @@ function transform(input) {
     return simplifySingle(input, orPosition > -1 ? 'or' : 'and');
 }
 module.exports.transform = transform;
-//# sourceMappingURL=transform.js.map
+//# sourceMappingURL=convert.js.map
