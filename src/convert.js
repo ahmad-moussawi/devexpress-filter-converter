@@ -9,13 +9,13 @@ var simplifySingle = (array, boolean) => {
         return null;
     }
 
-    return filtered.length === 1 ? transform(array[0]) : {
+    return filtered.length === 1 ? convert(array[0]) : {
         booleanOperator: boolean,
-        conditions: filtered.map(x => transform(x)).filter(x => x !== null),
+        conditions: filtered.map(x => convert(x)).filter(x => x !== null),
     };
 }
 
-function transform(input) {
+function convert(input) {
 
     // stop when receiving a plain value.
     // no further processing needed
@@ -49,4 +49,4 @@ function transform(input) {
 
 }
 
-module.exports.transform = transform;
+module.exports.convert = convert;

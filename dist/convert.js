@@ -7,12 +7,12 @@ var simplifySingle = function (array, boolean) {
     if (filtered.length === 0) {
         return null;
     }
-    return filtered.length === 1 ? transform(array[0]) : {
+    return filtered.length === 1 ? convert(array[0]) : {
         booleanOperator: boolean,
-        conditions: filtered.map(function (x) { return transform(x); }).filter(function (x) { return x !== null; }),
+        conditions: filtered.map(function (x) { return convert(x); }).filter(function (x) { return x !== null; }),
     };
 };
-function transform(input) {
+function convert(input) {
     if (!isArray(input)) {
         return input;
     }
@@ -34,5 +34,5 @@ function transform(input) {
     }
     return simplifySingle(input, orPosition > -1 ? 'or' : 'and');
 }
-module.exports.transform = transform;
+module.exports.convert = convert;
 //# sourceMappingURL=convert.js.map
