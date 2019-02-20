@@ -50,6 +50,12 @@ e = [
     ['col3', '=', 'value3'],
 ];
 
+e = ['name', '=', 'value'];
+
+e = [
+    "name", "=", "hello"
+]
+
 console.log('----')
 console.log(JSON.stringify(transform(e), null, ' '));
 

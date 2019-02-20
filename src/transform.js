@@ -10,7 +10,7 @@ var simplifySingle = (array, boolean) => {
     }
 
     return filtered.length === 1 ? transform(array[0]) : {
-        boolean: boolean,
+        booleanOperator: boolean,
         conditions: filtered.map(x => transform(x)).filter(x => x !== null),
     };
 }
@@ -26,7 +26,7 @@ function transform(input) {
     if (isLeaf(input)) {
         return {
             left: input[0],
-            operator: input[1],
+            op: input[1],
             right: input[2]
         };
     }
