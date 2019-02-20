@@ -1,1 +1,1 @@
-module.exports.transform = require('./transform');
+module.exports.convert = require('./convert').convert;

@@ -1,4 +1,4 @@
-var transform = require('./transform').transform;
+var convert = require('./convert').convert;
 
 var e = [
     [
@@ -57,5 +57,5 @@ e = [
 ]
 
 console.log('----')
-console.log(JSON.stringify(transform(e), null, ' '));
+console.log(JSON.stringify(convert(e), null, ' '));
 
