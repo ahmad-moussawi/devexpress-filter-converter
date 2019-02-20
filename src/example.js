@@ -3,19 +3,19 @@ var transform = require('./transform').transform;
 var e = [
     [
         [
-            "businessUnitName",
+            "name",
             "contains",
             "bu"
         ],
         "and",
         [
-            "companyName",
+            "lname",
             "contains",
             "cc"
         ],
         "and",
         [
-            "companyCountryName",
+            "age",
             "contains",
             "sdsd"
         ]
